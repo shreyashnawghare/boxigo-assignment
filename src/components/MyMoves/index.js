@@ -22,7 +22,7 @@ const MyMoves = () => {
   useEffect(() => {
       const fetchData = async() => {
         setApiStatus(apiConstatnt.inProgress)
-          const response = await fetch("https://test.api.boxigo.in/sample-data/")
+          const response = await fetch("http://test.api.boxigo.in/sample-data/")
           const data = await response.json()
           console.log(data)
           try {
